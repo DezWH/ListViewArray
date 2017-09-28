@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -9,9 +8,11 @@
     tools:context="com.dez.listviewarray.MainActivity">
 
     <EditText
-      android:id="@+id/new_todo_item_edittext"
-      android:layout_width="match_parent"
-      android:layout_height="wrap_content"/>
+
+        android:id="@+id/new_todo_item_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
 
     <Button
         android:id="@+id/new_todo_item_button"
@@ -20,10 +21,12 @@
         android:text="Add"
         android:layout_below="@+id/new_todo_item_edittext"/>
 
+
     <ListView
         android:id="@+id/todo_listview"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
         android:layout_below="@+id/new_todo_item_button"/>
-    </ListView>
+
+
 </RelativeLayout>
